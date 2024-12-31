@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery">
+      <div class="gallery-item" onclick="openModal(); currentSlide(1)">
+        <img src="assests/image1.jpg" alt="Image 1">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(2)">
+        <img src="assests/image2.jpg" alt="Image 2">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(3)">
+        <img src="assests/image3.jpg" alt="Image 3">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(4)">
+        <img src="assests/image4.jpg" alt="Image 4">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(5)">
+        <img src="assests/image5.jpg" alt="Image 5">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(6)">
+        <img src="assests/image6.jpg" alt="Image 6">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(7)">
+        <img src="assests/image7.jpg" alt="Image 7">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(8)">
+        <img src="assests/image8.jpg" alt="Image 8">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(9)">
+        <img src="assests/image9.jpg" alt="Image 9">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(10)">
+        <img src="assests/image10.jpg" alt="Image 10">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(11)">
+        <img src="assests/image11.jpg" alt="Image 11">
+      </div>
+      <div class="gallery-item" onclick="openModal(); currentSlide(12)">
+        <img src="assests/image12.jpg" alt="Image 12">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for larger image view -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+      <div class="modal-slides">
+        <div class="mySlides fade">
+          <img src="assests/image1.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides fade">
+          <img src="assests/image2.jpg" alt="Image 2">
+        </div>
+        <div class="mySlides fade">
+          <img src="assests/image3.jpg" alt="Image 3">
+        </div>
+        <div class="mySlides fade">
+          <img src="assests/image4.jpg" alt="Image 4">
+        </div>
+        <div class="mySlides fade">
+            <img src="assests/image5.jpg" alt="Image 5">
+          </div>
+          <div class="mySlides fade">
+            <img src="assests/image6.jpg" alt="Image 6">
+          </div>
+          <div class="mySlides fade">
+            <img src="assests/image7.jpg" alt="Image 7">
+          </div>
+          <div class="mySlides fade">
+            <img src="assests/image8.jpg" alt="Image 8">
+          </div>
+          <div class="mySlides fade">
+            <img src="assests/image9.jpg" alt="Image 9">
+          </div>
+          <div class="mySlides fade">
+            <img src="assests/image10.jpg" alt="Image 10">
+          </div>
+          <div class="mySlides fade">
+            <img src="assests/image11.jpg" alt="Image 11">
+          </div>
+          <div class="mySlides fade">
+            <img src="assests/image12.jpg" alt="Image 12">
+          </div>
+      </div>
+      <span class="next" onclick="plusSlides(1)">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
